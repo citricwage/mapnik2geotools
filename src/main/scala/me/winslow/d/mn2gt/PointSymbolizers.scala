@@ -53,7 +53,7 @@ object MarkersSymbolizerTransformer extends RewriteRule {
       Map("ellipse" -> "circle", "arrow" -> "arrow")
 
     private val DefaultMarkerTypes =
-      Map("point" -> "ellipse", "line" -> "arrow")
+      Map("point" -> "ellipse", "line" -> "arrow", "interior" -> "ellipse")
 
     def convertMarkersSymbolizer(e: Elem): Seq[Node] = {
       val attrs = e.attributes.asAttrMap
